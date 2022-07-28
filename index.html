@@ -9,6 +9,59 @@
 		<script src="tabs.js"></script>
 	</head>
 	<body>
-		<p>Some tabs here 🗂</p>
+		<div class="container">
+			<div class="tabs">
+				<div role="tablist" aria-label="Tabs">
+					<button class="tabs__tab" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
+						Lorem ipsum
+					</button>
+					<button class="tabs__tab" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1">
+						Viverra met
+					</button>
+					<button class="tabs__tab" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1">
+						Pellentesque
+					</button>
+				</div>
+				<div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+					<h2>Title for tab 1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					   Sed pharetra magna in gravida iaculis. Vivamus ut tempus nunc. 
+					   In in mi at nibh scelerisque vestibulum. Aenean at tortor leo. Duis sodales porta arcu. 
+					   Sed at magna vulputate, venenatis nunc ac, ullamcorper dolor.
+					</p>
+					<p>
+						In hac habitasse platea dictumst. 
+						Vivamus et erat diam. Pellentesque dui augue, molestie at rhoncus vel, iaculis vitae eros. 
+						Sed posuere ipsum a elementum ultrices. Etiam et ipsum dignissim, tincidunt nulla quis, vestibulum felis.
+					</p>
+				</div>
+				<div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" hidden>
+					<h2>Title for tab 2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					   Sed pharetra magna in gravida iaculis. Vivamus ut tempus nunc. 
+					   In in mi at nibh scelerisque vestibulum. Aenean at tortor leo. Duis sodales porta arcu. 
+					   Sed at magna vulputate, venenatis nunc ac, ullamcorper dolor.
+					</p>
+					<p>
+						In hac habitasse platea dictumst. 
+						Vivamus et erat diam. Pellentesque dui augue, molestie at rhoncus vel, iaculis vitae eros. 
+						Sed posuere ipsum a elementum ultrices. Etiam et ipsum dignissim, tincidunt nulla quis, vestibulum felis.
+					</p>
+				</div>
+				<div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" hidden>
+					<h2>Title for tab 3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+					   Sed pharetra magna in gravida iaculis. Vivamus ut tempus nunc. 
+					   In in mi at nibh scelerisque vestibulum. Aenean at tortor leo. Duis sodales porta arcu. 
+					   Sed at magna vulputate, venenatis nunc ac, ullamcorper dolor.
+					</p>
+					<p>
+						In hac habitasse platea dictumst. 
+						Vivamus et erat diam. Pellentesque dui augue, molestie at rhoncus vel, iaculis vitae eros. 
+						Sed posuere ipsum a elementum ultrices. Etiam et ipsum dignissim, tincidunt nulla quis, vestibulum felis.
+					</p>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
