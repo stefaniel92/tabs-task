@@ -1,0 +1,28 @@
+body {
+  background-color: #F3F4F5;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    max-width: 994px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@media screen and (min-width: 767px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 0;
+    }
+}

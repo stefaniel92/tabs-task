@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
             tab.addEventListener('click', changeTabs);
           });
 
-          // Enable arrow navigation between tabs in the tab list
+        // Enable arrow navigation between tabs in the tab list
         let tabFocus = 0;
     
         tabList.addEventListener('keydown', (e) => {
