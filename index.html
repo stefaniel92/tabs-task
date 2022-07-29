@@ -10,8 +10,13 @@
 	</head>
 	<body>
 		<div class="container">
+			<!-- To make sure each tab component would work if we had multiple tab 
+				components on one page, we would need to generate a unique ID for each tab and 
+				tab panel in each component.
+			-->
 			<div class="tabs">
 				<div role="tablist" aria-label="Tabs">
+					<!-- Using buttons instead of links because a link implies leaving the current page to go to another one -->
 					<button class="tabs__tab" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0">
 						Lorem ipsum
 					</button>

@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     
     //Loop through each tablist so you can have multiple on a page
     tabLists.forEach(function(tabList){
+        //Tabs are only the tabs that correspond to the active tabList
         const tabs = tabList.querySelectorAll('[role="tab"]');
 
         tabs.forEach((tab) => {
@@ -32,6 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     }
                 }
         
+                //Set tabindex of current tab to 0 and set focus to that tab
                 tabs[tabFocus].setAttribute('tabindex', 0);
                 tabs[tabFocus].focus();
             }
@@ -47,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const grandparent = parent.parentNode;
 
   
-    // Remove all current selected tabs
+    // Remove all current selected tabs by setting aria-selected attribute to false
     parent
       .querySelectorAll('[aria-selected="true"]')
       .forEach((tab) => tab.setAttribute('aria-selected', false));
@@ -60,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
       .querySelectorAll('[role="tabpanel"]')
       .forEach((panel) => panel.setAttribute('hidden', true));
   
-    // Show the selected panel
+    // Show the selected panel by removing 'hidden' from the panel that corresponds with the current tab
     grandparent.parentNode
       .querySelector(`#${targetTab.getAttribute('aria-controls')}`)
       .removeAttribute('hidden');
