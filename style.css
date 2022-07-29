@@ -56,16 +56,16 @@ p,
 
 .tabs__tab-panel {
     padding: 15px;
-    box-shadow: 0px 2px 4px #c4c4c4;
-    --webkit-box-shadow: 0px 2px 4px #c4c4c4;
-    -moz-box-shadow: 0px 2px 4px #c4c4c4;
+    box-shadow: 0px 2px 2px #d3d3d3;
+    --webkit-box-shadow: 0px 2px 2px #d3d3d3;
+    -moz-box-shadow: 0px 2px 2px #d3d3d3;
 }
 
 button.tabs__tab {
     --webkit-appearance: none;
     box-shadow: none;
     border: none;
-    padding: 17px 10px;
+    padding: 20px 34px;
 }
 
 @media screen and (min-width: 600px) {
